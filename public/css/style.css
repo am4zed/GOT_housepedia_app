@@ -1,0 +1,25 @@
+body{
+  background-image: url('http://images6.fanpop.com/image/photos/39000000/The-Seven-Kingdoms-game-of-thrones-39088621-2048-1146.jpg');
+  background-size:auto;
+}
+
+h1, h2{
+  color: white;
+  font-family: 'gameOfThrones';
+  src:url('../gameOfThrones.ttf');
+}
+
+p, label{
+  font-family: 'Cinzel', serif;
+  color: white;
+}
+
+#main-content-wrapper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#house-list-view-wrapper{
+  width: 60%;
+}

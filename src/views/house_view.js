@@ -28,13 +28,17 @@ HouseView.prototype.createInfo = function () {
   region.textContent = `Region: ${this.house.region}`;
   infoSection.appendChild(region);
 
-  const coatOfArms = document.createElement('p');
+  if (this.house.coatOfArms) {
+    const coatOfArms = document.createElement('p');
   coatOfArms.textContent = `Coat of Arms: ${this.house.coatOfArms}`;
-  infoSection.appendChild(coatOfArms);
+  infoSection.appendChild(coatOfArms)
+  };
 
-  const words = document.createElement('p');
-  words.textContent = `Words: ${this.house.words}`;
-  infoSection.appendChild(words);
+  if (this.house.words) {
+    const words = document.createElement('p');
+    words.textContent = `Words: ${this.house.words}`;
+    infoSection.appendChild(words);
+  };
 
   return infoSection;
 };

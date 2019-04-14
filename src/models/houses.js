@@ -7,7 +7,7 @@ const Houses = function(){
 };
 
 Houses.prototype.getData = function () {
-  const helper = new RequestHelper('https://www.anapioficeandfire.com/api/houses');
+  const helper = new RequestHelper('https://www.anapioficeandfire.com/api/houses?page=1&pageSize=50');
 
     helper.get()
       .then( (houseData) => {
