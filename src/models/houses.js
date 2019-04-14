@@ -17,10 +17,10 @@ Houses.prototype.getData = function () {
         this.regions = regions;
         PubSub.publish('Houses:house-data-ready', this.data);
         PubSub.publish('Houses:region-data-ready', this.regions);
+      })
+      .catch((err)=>{
+        PubSub.publish('Houses:error', err);
       });
-      // .catch((err)=>{
-      //   PubSub.publish('Houses:error', err);
-      // });
 };
 
 Houses.prototype.bindEvents = function () {

@@ -15,12 +15,14 @@ SelectView.prototype.bindEvents = function () {
 };
 
 SelectView.prototype.populate = function (regions) {
-  regions.forEach( (region, index) => {
-    const option = document.createElement('option');
-    option.textContent = region;
-    option.value = index;
-    this.select.appendChild(option);
-  })
+  regions.forEach((region, index) => {
+    if (region != ''){
+      const option = document.createElement('option');
+      option.textContent = region;
+      option.value = index;
+      this.select.appendChild(option);
+    };
+  });
 };
 
 module.exports = SelectView;
