@@ -1,5 +1,5 @@
 const PubSub = require('../helpers/pub_sub.js');
-// const HouseView = require('./house_view.js');
+const HouseView = require('./house_view.js');
 
 const HouseListView = function(container){
   this.container = container;
