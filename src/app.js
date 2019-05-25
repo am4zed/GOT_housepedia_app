@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const houseSelectView = new SelectView(select);
   houseSelectView.bindEvents();
 
-  const houses = new Houses();
-  houses.getData();
+  const houses = new Houses('https://www.anapioficeandfire.com/api/houses?page=', '&pageSize=50');
   houses.bindEvents();
 
 });

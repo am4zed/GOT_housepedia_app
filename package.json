@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "webpack.config.js",
   "scripts": {
+    "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -w"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.0",
     "webpack": "^4.30.0"
   },
   "devDependencies": {
