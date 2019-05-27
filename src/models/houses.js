@@ -13,7 +13,7 @@ Houses.prototype.getData = function () {
     helper.get()
       .then( (houseData) => {
         this.data = houseData;
-        console.log(this.data);
+        console.log("banana");
         const regions = this.getRegions();
         this.regions = regions;
         PubSub.publish('Houses:house-data-ready', this.data);
